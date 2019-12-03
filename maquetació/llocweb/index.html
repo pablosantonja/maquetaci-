@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Maquetació</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+        <style type="text/css">
+            :root{
+                --titular:2em;
+                --cos:1em;
+                --cfonts:red;
+            }
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+            body{
+                font-size: 15px;
+            }
+            header{
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+        }
+            section{
+                width: 50%;
+                height: 70vw;
+        }
+              section:first-child{
+                float: left;
+                background: blue;
+        }
+            section:first-child img{
+                object-fit: cover;
+                height: 80%;
+                object-position: top center;
+            }
+            section:last-child{
+                background: red;
+                object-position: center center;
+        }
+            section:last-child img{
+                object-fit: cover;
+                height: 100%;
+                object-position: top center;
+            }
+            h1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                height: 50%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 4vw;
+                color: black;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h2{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                height: 50%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 4vw;
+                color: red;
+                font-family: 'Open Sans', sans-serif;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            main {
+                width: 600px;
+                margin: auto;
+                font-family: 'Noto Serif', serif;
+            }
+            main>p{
+                padding: 4em 0;
+                line-height: 1.4em;                
+                color: red;
+                column-count: 2;
+                column-gap: 30px;
+                column-rule: 1px solid red;
+                text-align: justify;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+            }
+            article{
+                padding: 0 4em;
+                color: gray;
+            }
+            article p{
+                margin:0 0 1.2em 0; 
+                text-align: justify;
+                hyphens: auto;
+            }
+            article p:first-child:first-letter{ 
+                color: red;
+                font-size: 9em;
+                float: left;
+                line-height: 6rem;
+                padding-right: 1rem;
+                padding-left: 0.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .cercle{
+                background: pink;
+                border-radius: 50%;
+                shape-outside: circle(50%) border-box;
+                float: left;
+                max-width: 18em;
+                margin-left: -4em;
+                shape-margin: 0.4em;
+                margin-right: 5em;
+            }
+            .cercle img{
+                mix-blend-mode: hard-light;
+                border-radius: 50%;
+                shape-outside: circle(50%);
+
+            }
+            .hexagon{
+                background: pink;
+                float: right;
+                max-width: 20em;
+                margin-right: -6em;
+                shape-margin: 1em;
+                margin-left: 1em;
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;
+            }
+            .hexagon img{
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            }
+            @media(max-width:600px);
+            body{
+                font-size:14px;
+            }
+    </style>
+    </head>
+    <body>
+        <header>
+            <section>
+            <img src="img/image%201.jpg" alt="">
+            <h1>Paco<br>Bascuñan</h1>
+            </section>
+            <section>
+            <img src="img/image%202.jpg" alt="">
+            <h2>Alex<br>Steinweiss</h2>
+            </section>
+        </header>
+        <main>
+            <p>Bascuñán inició su trabajo profesional en 1973 centrada en el diseño gráfico, tanto en el campo comercial como en el mundo de la docencia. Se tituló en la Escuela de Artes Aplicadas de Valencia el 1973. Posteriormente, el 1981 fundó, junto a diseñadores, el grupo Enebece de diseño gráfico y dos años más tarde fue uno de los creadores del grupo La Nave, junto con diez profesionales del diseño gráfico, industrial y la arquitectura, disciplinas que formaron parte de las actividades del grupo hasta su disolución el 1991, según figura en la ficha biográfica de la Asociación de Diseñadores de la Comunidad Valenciana (ADCV).</p>
+            <article>
+            <p>Dentro del diseño gráfico ha trabajado prácticamente todas sus disciplinas: diseño de comunicación, editorial, identidad corporativa, señalización y diseño multimedia.El 1992 nació su estudio "Estudio Paco Bascuñán" un trabajo que compaginó con los talleres y las conferencias que impartía. Paralelamente, desarrolló su trabajo artístico como pintor, y expuso con regularidad en varias ciudades de España.En 2000 su obra participó en la exposición organizada por el Impiva y el Ministerio de Economía, Signos del siglo. 100 años de diseño gráfico en España, muestra que reconocía la aportación de los diseñadores españoles a la calidad de vida, al éxito de muchos productos y empresas, a la diversidad y a la creatividad. La participación de la obra de Paco Bascuñán en dicha exposición fue junto a otros 18 diseñadores valencianos ofreciendo una panorámica del diseño realizado por los profesionales valencianos como José Ramón Alcalá, Sebastián Alón, Arturo Ballester, Luis Dubón, Sandra Figuerola, Marisa Gallén, Luis García Falgá, Pepe Gimeno, Lavernia y asociados, Nacho Lavernia, Javier Mariscal, Juan Nava, Daniel Nebot, Belén Payá, Rafael Ramírez Blanco, Josep Renau, Miguel Ripoll y Carlos Ruano.</p>
+                <div class="cercle">
+            <img src="img/image%203.jpg">
+                </div>
+            <p>Uno de sus últimos actos públicos fue el 24 de septiembre de 2009, cuando participó en la presentación al Museo Valenciano de la Ilustración y la Modernidad (MuVim) de la exposición Suma y sigue del diseño en la Comunidad Valenciana, de la cual era comisario. Precisamente, el director del museo, Román de Calle, expresó al morir Bascuñán que con la muerte de éste, el diseño valenciano quedaba de luto.</p>
+                <div class="hexagon">
+            <img src="img/image%204.jpg" alt="">
+                    </div>
+            <p>Bascuñán, fue el primer diseñador que ingresó en la Real Academia de Bellas Artes de San Carlos.Murió el lunes 28 de septiembre de 2009 en su domicilio de Valencia, a la edad de 55 años, debido a un paro cardíaco.Dentro del diseño gráfico ha trabajado prácticamente todas sus disciplinas: diseño de comunicación, editorial, identidad corporativa, señalización y diseño multimedia.El 1992 nació su estudio "Estudio Paco Bascuñán" un trabajo que compaginó con los talleres y las conferencias que impartía. Paralelamente, desarrolló su trabajo artístico como pintor, y expuso con regularidad en varias ciudades de España.En 2000 su obra participó en la exposición organizada por el Impiva y el Ministerio de Economía, Signos del siglo. 100 años de diseño gráfico en España, muestra que reconocía la aportación de los diseñadores españoles a la calidad de vida, al éxito de muchos productos y empresas, a la diversidad y a la creatividad. La participación de la obra de Paco Bascuñán en dicha exposición fue junto a otros 18 diseñadores valencianos ofreciendo una panorámica del diseño realizado por los profesionales valencianos como José Ramón Alcalá, Sebastián Alón, Arturo Ballester, Luis Dubón, Sandra Figuerola, Marisa Gallén, Luis García Falgá, Pepe Gimeno, Lavernia y asociados, Nacho Lavernia, Javier Mariscal, Juan Nava, Daniel Nebot, Belén Payá, Rafael Ramírez Blanco, Josep Renau, Miguel Ripoll y Carlos Ruano.</p>
+            </article>    
+        </main>
+    </body>
+</html>
